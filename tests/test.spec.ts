@@ -34,7 +34,7 @@ test('Check File Uploader', async({front})=> {
   await front.fileUpload.fileUploaded();
 })
 
-test.only('Check Broken images ', async({front})=> {
+test('Check Broken images ', async({front})=> {
   await front.brokenImages.clickOnfileUploadLink();
   await front.brokenImages.pageOpened();
   //Чекінг зломаних images. Витягую src атрибут кожного img tag і виконую АPI request та перевіркою статус коду
